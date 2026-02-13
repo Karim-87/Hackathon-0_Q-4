@@ -4,17 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c88b6a2f258feb0e",
+        "id": "9d41ab563dc7775f",
         "type": "tabs",
         "children": [
           {
-            "id": "ceb476ecabb2ed9b",
+            "id": "f38ebccc14384275",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "canvas",
+              "state": {
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           }
         ]
@@ -90,16 +97,17 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Untitled.canvas",
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Untitled"
             }
           },
           {
@@ -162,8 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,6 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "ceb476ecabb2ed9b",
-  "lastOpenFiles": []
+  "active": "f38ebccc14384275",
+  "lastOpenFiles": [
+    "Untitled.canvas",
+    "Untitled.base",
+    "Untitled 1.base"
+  ]
 }
