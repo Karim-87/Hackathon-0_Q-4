@@ -1,0 +1,12 @@
+.env
+.env.*
+*.pyc
+__pycache__/
+node_modules/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+*.session
+*.credentials
+secrets/
+*.key
+*.pem
