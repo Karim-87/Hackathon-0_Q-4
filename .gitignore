@@ -1,12 +1,32 @@
+# Environment secrets
 .env
 .env.*
-*.pyc
+!.env.example
+
+# Python-generated files
 __pycache__/
-node_modules/
+*.py[oc]
+*.pyc
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Obsidian workspace (user-specific)
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
-*.session
-*.credentials
+
+# OAuth credentials and tokens — NEVER commit these
 secrets/
+credentials.json
+*_token.json
+*.credentials
+*.session
 *.key
 *.pem
+
+# Node
+node_modules/

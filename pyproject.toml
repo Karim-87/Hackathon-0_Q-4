@@ -1,0 +1,13 @@
+[project]
+name = "ai-employee-watchers"
+version = "0.1.0"
+description = "AI Employee file watchers for Obsidian vault automation"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "watchdog",
+    "python-dotenv",
+    "google-auth",
+    "google-auth-oauthlib",
+    "google-api-python-client",
+]
