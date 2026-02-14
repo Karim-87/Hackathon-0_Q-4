@@ -13,3 +13,8 @@ wheels/
 .env
 .env.*
 !.env.example
+
+# OAuth credentials and tokens — NEVER commit these
+secrets/
+credentials.json
+*_token.json
