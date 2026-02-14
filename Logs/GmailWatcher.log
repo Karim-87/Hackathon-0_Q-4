@@ -1,0 +1,7 @@
+2026-02-14 12:00:00 | GmailWatcher | INFO | Starting GmailWatcher (interval=120s, vault=D:\Hackathon-0 Q4\AI_Employee_Vault)
+2026-02-14 12:00:01 | GmailWatcher | INFO | Token saved to D:\Hackathon-0 Q4\ai-employee-project\ai-employee-watchers\secrets\gmail_token.json
+2026-02-14 12:00:02 | GmailWatcher | DEBUG | No new updates
+2026-02-14 12:02:02 | GmailWatcher | INFO | Found 1 new item(s)
+2026-02-14 12:02:02 | GmailWatcher | INFO | Action file created: Needs_Action\emails\20260214_120200_URGENT_Invoice_Request.md
+2026-02-14 12:02:03 | GmailWatcher | INFO | Marked email as read: 18daf4b2c3e5f6a7
+2026-02-14 12:04:03 | GmailWatcher | DEBUG | No new updates

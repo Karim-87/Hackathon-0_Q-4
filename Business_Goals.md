@@ -1,5 +1,5 @@
 ---
-last_updated: 2026-01-01
+last_updated: 2026-02-14
 review_frequency: weekly
 ---
 
@@ -8,18 +8,19 @@ review_frequency: weekly
 ## Q1 2026 Objectives
 
 ### Revenue Target
-- Monthly goal: $___
-- Current MTD: $0
+- Monthly goal: $5,000
+- Current MTD: $2,300
 
 ### Key Metrics to Track
 | Metric | Target | Alert Threshold |
 |--------|--------|-----------------|
 | Client response time | < 24 hours | > 48 hours |
 | Invoice payment rate | > 90% | < 80% |
-| Software costs | < $___/month | > $___/month |
+| Software costs | < $200/month | > $300/month |
 
 ### Active Projects
-1. Project ___  — Due ___ — Budget $___
+1. Client A — Web Development Retainer — Due 2026-03-15 — Budget $4,500
+2. Client B — Logo Design — Due 2026-02-28 — Budget $800 (completed)
 
 ### Subscription Audit Rules
 Flag for review if:
