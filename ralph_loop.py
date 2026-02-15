@@ -34,6 +34,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from security_config import audit_log, security
+
 
 class RalphLoop:
     """Persistent task execution loop with context re-injection."""
@@ -42,11 +44,11 @@ class RalphLoop:
     CLAUDE_TIMEOUT = 180  # 3 minutes per iteration
     COMPLETION_MARKER = "TASK_COMPLETE"
 
-    def __init__(self, vault_path, task_description, max_iterations=None, dry_run=False):
+    def __init__(self, vault_path, task_description, max_iterations=None, dry_run=None):
         self.vault_path = Path(vault_path)
         self.task_description = task_description
         self.max_iterations = max_iterations or self.DEFAULT_MAX_ITERATIONS
-        self.dry_run = dry_run
+        self.dry_run = dry_run if dry_run is not None else security.dry_run
 
         # Vault paths
         self.in_progress = self.vault_path / "In_Progress"
@@ -77,9 +79,6 @@ class RalphLoop:
         vault_path = os.getenv("VAULT_PATH")
         if not vault_path:
             raise ValueError("VAULT_PATH not set in .env file")
-
-        if dry_run is None:
-            dry_run = os.getenv("DRY_RUN", "true").lower() == "true"
 
         return cls(
             vault_path=vault_path,
@@ -289,6 +288,8 @@ class RalphLoop:
 
         if self.dry_run:
             self.logger.info("DRY RUN — simulating Claude Code execution")
+            audit_log("skill_run", "ralph_loop", self.task_description[:100], "dry_run",
+                      metadata={"task_id": self.task_id})
             return True, f"DRY RUN: Would execute task. Iteration prompt length: {len(prompt)} chars"
 
         try:

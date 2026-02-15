@@ -8,6 +8,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from security_config import audit_log, security
+
 
 class BaseWatcher(ABC):
     """Base class for all AI Employee vault watchers."""
@@ -112,6 +114,8 @@ class BaseWatcher(ABC):
 
         filepath.write_text("\n".join(lines), encoding="utf-8")
         self.logger.info(f"Action file created: {filepath.relative_to(self.vault_path)}")
+        audit_log("file_op", "watcher", str(filepath.relative_to(self.vault_path)),
+                  "success", metadata={"operation": "create_action_file"})
         return filepath
 
     def run(self):

@@ -28,5 +28,8 @@ credentials.json
 *.key
 *.pem
 
+# Audit logs (contain action details — keep local only)
+Logs/audit/
+
 # Node
 node_modules/

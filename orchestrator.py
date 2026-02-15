@@ -23,6 +23,8 @@ from threading import Event, Lock, Thread
 
 from dotenv import load_dotenv
 
+from security_config import audit_log, security
+
 
 # ── State Machine ───────────────────────────────────────────────────
 
@@ -77,9 +79,9 @@ class Orchestrator:
     MAX_RETRIES = 1             # retry once on failure, then alert
     CLAUDE_TIMEOUT = 120        # seconds to wait for Claude Code
 
-    def __init__(self, vault_path, dry_run=False):
+    def __init__(self, vault_path, dry_run=None):
         self.vault_path = Path(vault_path)
-        self.dry_run = dry_run
+        self.dry_run = dry_run if dry_run is not None else security.dry_run
         self._running = False
         self._stop_event = Event()
         self._lock = Lock()
@@ -118,12 +120,11 @@ class Orchestrator:
         """Create orchestrator from .env configuration."""
         load_dotenv()
         vault_path = os.getenv("VAULT_PATH")
-        dry_run = os.getenv("DRY_RUN", "true").lower() == "true"
 
         if not vault_path:
             raise ValueError("VAULT_PATH not set in .env file")
 
-        return cls(vault_path=vault_path, dry_run=dry_run)
+        return cls(vault_path=vault_path)
 
     # ── Setup ───────────────────────────────────────────────────────
 
@@ -202,6 +203,8 @@ class Orchestrator:
         if self.dry_run:
             self.logger.info(f"DRY RUN — would run skill: {skill_name}")
             self._log_event("skill_dry_run", skill_name=skill_name, context=context)
+            audit_log("skill_run", "orchestrator", skill_name, "dry_run",
+                      metadata={"context": context[:200]})
             self._total_skills_run += 1
             return True
 
@@ -219,6 +222,7 @@ class Orchestrator:
                 self.logger.info(f"Skill completed: {skill_name}")
                 self._total_skills_run += 1
                 self._log_event("skill_success", skill_name=skill_name)
+                audit_log("skill_run", "orchestrator", skill_name, "success")
                 return True
             else:
                 self.logger.error(
@@ -227,11 +231,16 @@ class Orchestrator:
                 )
                 self._log_event("skill_failed", skill_name=skill_name,
                                 error=result.stderr[:200])
+                audit_log("skill_run", "orchestrator", skill_name, "failed",
+                          metadata={"exit_code": result.returncode,
+                                    "error": result.stderr[:200]})
                 return False
 
         except subprocess.TimeoutExpired:
             self.logger.error(f"Skill timed out after {self.CLAUDE_TIMEOUT}s: {skill_name}")
             self._log_event("skill_timeout", skill_name=skill_name)
+            audit_log("skill_run", "orchestrator", skill_name, "failed",
+                      metadata={"error": "timeout"})
             return False
         except FileNotFoundError:
             self.logger.error(
@@ -239,6 +248,8 @@ class Orchestrator:
             )
             self._log_event("skill_error", skill_name=skill_name,
                             error="claude CLI not found")
+            audit_log("skill_run", "orchestrator", skill_name, "failed",
+                      metadata={"error": "claude CLI not found"})
             return False
 
     def _run_skill_with_retry(self, skill_name, context=""):
@@ -399,6 +410,9 @@ class Orchestrator:
             f"dry_run={self.dry_run}, scan_interval={self.SCAN_INTERVAL}s)"
         )
         self._log_event("orchestrator_start", dry_run=self.dry_run)
+        audit_log("system", "orchestrator", "orchestrator_start", "success",
+                  metadata={"dry_run": self.dry_run,
+                            "rate_limits": security.all_rate_limits()})
 
         # Snapshot current files so we only react to new ones
         self._known_needs_action = self._scan_folder(self.needs_action)

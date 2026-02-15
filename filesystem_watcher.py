@@ -9,6 +9,7 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 from base_watcher import BaseWatcher
+from security_config import audit_log
 
 
 class _DropHandler(FileSystemEventHandler):
@@ -99,6 +100,10 @@ class FileSystemWatcher(BaseWatcher):
 
         shutil.copy2(source, dest_path)
         self.logger.info(f"File copied: {source.name} -> {dest_path.relative_to(self.vault_path)}")
+        audit_log("file_op", "watcher", f"copy {source.name}", "success",
+                  metadata={"source": source.name,
+                            "dest": str(dest_path.relative_to(self.vault_path)),
+                            "size_bytes": dest_path.stat().st_size})
 
         # Create metadata .md file
         file_size = dest_path.stat().st_size

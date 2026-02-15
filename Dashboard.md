@@ -28,11 +28,12 @@ version: 0.5
 | [[PLAN_review_test_invoice_20260214]] | `test_invoice.txt` | in_progress | Required |
 | [[SETUP_gmail_api_20260214]] | Setup guide | pending | Not required |
 
-## ⏳ Pending Approval (2)
+## ⏳ Pending Approval (3)
 | # | Item | Type | Priority | Since |
 |---|------|------|----------|-------|
 | 1 | [[APPROVAL_email_new_contact_invoice_20260214]] | email_send | high | 2026-02-14 |
 | 2 | [[APPROVAL_email_new_contact_20260214]] | email_send | medium | 2026-02-14 |
+| 3 | [[LINKEDIN_2026-02-15]] | social_post | medium | 2026-02-15 |
 
 ## 🔄 In Progress (0)
 _No tasks in progress_
@@ -64,7 +65,7 @@ _No tasks in progress_
 |--------|-------|
 | Needs_Action | 3 |
 | Plans | 3 |
-| Pending_Approval | 2 |
+| Pending_Approval | 3 |
 | In_Progress | 0 |
 | Done | 3 |
 | Active_Projects | 0 |
@@ -80,6 +81,7 @@ _No tasks in progress_
   - 5 proactive suggestions including exiting DRY_RUN mode
 
 ## 📄 Recent Logs
+- **LinkedIn post draft** created at 2026-02-15 08:55 — pending approval in [[LINKEDIN_2026-02-15]]
 - **CEO Briefing v2** generated at 2026-02-15 23:30 → [[2026-02-16_Monday_Briefing_v2]]
 - **CEO Briefing v1** generated at 2026-02-15 23:00 → [[2026-02-16_Monday_Briefing]]
 - **GmailWatcher.log** — Last active: 2026-02-14 12:04:03
