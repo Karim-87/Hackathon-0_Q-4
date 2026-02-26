@@ -1,13 +1,14 @@
 ---
 type: demo_script
-target_duration: 5-10 minutes
+target_duration: 10-12 minutes
 created: 2026-02-15
+updated: 2026-02-26
 ---
 
 # Demo Script — Personal AI Employee
 
-**Target duration**: 5-10 minutes
-**Recording tip**: Have Obsidian and a terminal open side by side. Rehearse once before recording.
+**Target duration**: 10-12 minutes
+**Recording tip**: Have Obsidian, a terminal, and WhatsApp open before recording. Rehearse once end-to-end.
 
 ---
 
@@ -17,8 +18,9 @@ created: 2026-02-15
 
 > Say:
 > "Hi, I'm Karim. For Hackathon 0 I built a Personal AI Employee —
-> an autonomous system that manages my emails, files, payments, and
-> social media using Claude Code, all inside an Obsidian vault.
+> an autonomous system that manages my emails, WhatsApp messages,
+> files, payments, and social media using Claude Code, all inside
+> an Obsidian vault.
 >
 > The key idea: the AI works for me 24/7, but every sensitive action
 > requires my approval first. Let me show you how it works."
@@ -37,26 +39,28 @@ created: 2026-02-15
 
 Point out these folders (click each one):
 
-1. **`Needs_Action/`** — "This is the inbox. Emails, files, and messages land here automatically."
-2. **`Plans/`** — "Claude reads the inbox and creates action plans here."
-3. **`Pending_Approval/`** — "Anything that needs my sign-off waits here. I drag it to Approved or Rejected."
-4. **`Approved/`** → **`Done/`** — "Once I approve, Claude executes and moves the result to Done."
-5. **`Logs/`** — "Every action is logged — nothing happens silently."
+1. **`Needs_Action/`** — "This is the inbox. Emails, WhatsApp messages, and dropped files land here automatically."
+2. **`Needs_Action/messages/`** — "WhatsApp messages get their own subfolder — each one becomes a structured markdown file."
+3. **`Plans/`** — "Claude reads the inbox and creates action plans here."
+4. **`Pending_Approval/`** — "Anything that needs my sign-off waits here. I drag it to Approved or Rejected."
+5. **`Approved/`** → **`Done/`** — "Once I approve, Claude executes and moves the result to Done."
+6. **`Logs/`** — "Every action is logged — including a dedicated WhatsApp log — nothing happens silently."
 
 ### Show Dashboard.md
 
 **[Open Dashboard.md in Obsidian]**
 
 > Say:
-> "This dashboard updates automatically. Right now I have 3 pending
-> actions, 3 items waiting for my approval, and $2,300 revenue this
-> month — 46% of my $5,000 target."
+> "This dashboard updates automatically every 30 minutes. It now
+> includes a WhatsApp status section — I can see connection status,
+> unread chats, and messages sent today. Plus the usual financials:
+> $2,300 revenue this month, 46% of my $5,000 target."
 
 **Scroll to highlight**:
-- System Status (green online indicator)
+- WhatsApp Status section (green connected indicator)
 - Pending Actions table
 - Financial Summary (MTD revenue vs target)
-- Alerts section (invoice request, revenue pace warning)
+- Alerts section
 
 ### Show Company_Handbook.md
 
@@ -64,19 +68,103 @@ Point out these folders (click each one):
 
 > Say:
 > "This handbook defines the rules. The AI reads this before every
-> action. For example — any payment requires my approval, emails to
-> new contacts need sign-off, and social media posts are never
-> auto-published."
+> action. I've now added a full WhatsApp section — for example,
+> messages from unknown numbers always require approval before
+> I reply, group messages are only processed when I'm mentioned,
+> and I can never send more than 20 WhatsApp messages per hour."
 
-**Scroll to the Autonomy Levels table** — pause so the viewer can read it.
+**Scroll to the WhatsApp Autonomy Levels table** — pause so the viewer can read it.
 
 ---
 
-## 3. File Watcher Demo (2 minutes)
+## 3. WhatsApp Watcher Demo (2.5 minutes)
 
 ### Start the watcher
 
 **[Switch to terminal]**
+
+```bash
+cd "D:\Hackathon-0 Q4\ai-employee-project"
+node whatsapp_watcher.js
+```
+
+> Say:
+> "I'm starting the WhatsApp watcher. It connects to WhatsApp Web
+> using a saved session — no QR scan needed after the first time.
+> The session is stored locally and gitignored for security."
+
+**Wait for the connected message**:
+```
+WhatsApp Watcher starting... (DRY_RUN=false)
+Authenticated. Session saved.
+Connected: Karim Buksh (923042050840) on smba
+Checking unread messages from last 24 hours...
+Startup unread scan complete: 84 message(s) processed
+```
+
+> Say:
+> "Notice it scanned 84 unread messages from the last 24 hours on
+> startup. It filtered group messages that had no keywords, processed
+> the ones that mattered, and created action files for each one."
+
+### Show a processed message file
+
+**[Switch to Obsidian — open Needs_Action/messages/]**
+
+> Say:
+> "Here's what a processed WhatsApp message looks like. Each message
+> becomes a structured markdown file with YAML frontmatter —
+> sender, phone number, priority, whether they're a new contact,
+> and suggested actions."
+
+**[Open one of the .md files]**
+
+Highlight:
+- `type: whatsapp_message`
+- `priority: high`
+- `is_new_contact: true`
+- The "Suggested Actions" checklist
+
+### Send a live test message
+
+> Say:
+> "Let me show you a live message arriving. I'll send myself
+> a message with the keyword 'urgent' — which triggers high priority."
+
+**[On phone: send a WhatsApp message to yourself with "urgent invoice check karo"]**
+
+**[Watch terminal — within seconds]**:
+```
+Processed message from [Name] | priority=high | group=false
+Action file created: Needs_Action/messages/20260226_[Name].md
+```
+
+**[Switch to Obsidian — refresh Needs_Action/messages/]**
+
+> Say:
+> "The file appeared instantly. The watcher detected the keyword,
+> classified it as high priority, and created the action file.
+> The orchestrator will pick this up in the next 15-second scan."
+
+### Show group message filtering
+
+**[Point to the terminal log — show the DEBUG lines]**:
+```
+Group message from [Group Name] skipped (no mention/keyword)
+```
+
+> Say:
+> "Group messages are automatically filtered. Unless someone
+> mentions me by name, or the message contains a trigger keyword
+> like 'urgent' or 'invoice', it's skipped. No noise."
+
+---
+
+## 4. File Watcher Demo (1.5 minutes)
+
+### Start the file watcher
+
+**[Open a new terminal tab]**
 
 ```bash
 cd "D:\Hackathon-0 Q4\AI_Employee_Vault"
@@ -84,61 +172,34 @@ uv run python filesystem_watcher.py
 ```
 
 > Say:
-> "I'm starting the file system watcher. It monitors my desktop
-> drop folder — any file I put there gets automatically ingested
-> into the vault."
-
-**Wait for the startup message**:
-```
-Starting FileSystemWatcher (interval=5s, vault=...)
-Watching drop folder: C:\Users\User\Desktop\AI_Drop
-```
+> "The file system watcher monitors my desktop drop folder.
+> Any file I put there gets automatically ingested."
 
 ### Drop a test file
-
-**[Open a second terminal or file explorer]**
-
-Create a test file and drop it:
 
 ```bash
 echo "INVOICE - Project Alpha - $2,500 - Due March 1, 2026" > ~/Desktop/AI_Drop/invoice_project_alpha.txt
 ```
 
-> Say:
-> "I'm dropping a test invoice into the AI Drop folder on my desktop."
+> Say: "Dropping a test invoice..."
 
-### Show the result
-
-**[Switch back to the watcher terminal]**
-
-Wait for the log output:
+**[Show the watcher log]**:
 ```
 File copied: invoice_project_alpha.txt -> Needs_Action/files/...
 Action file created: Needs_Action/files/...
-Original removed from drop folder: invoice_project_alpha.txt
 ```
 
 > Say:
-> "Within seconds, the watcher picked it up, copied it into the vault,
-> created a metadata file, and removed the original from my desktop.
-> Let me show you in Obsidian."
+> "Instantly picked up, ingested into the vault, metadata file
+> created. The original is removed from my desktop."
 
-**[Switch to Obsidian]**
-
-Open `Needs_Action/files/` — show the new `.md` file that was created:
-
-> Say:
-> "Here's the action file. It has YAML frontmatter with the file type,
-> size, timestamp — and a body describing what was dropped. The
-> orchestrator will pick this up next."
-
-**[Ctrl+C the watcher in terminal to stop it]**
+**[Ctrl+C to stop file watcher]**
 
 ---
 
-## 4. Claude Code Processing (2 minutes)
+## 5. Claude Code Processing (1.5 minutes)
 
-### Show Claude processing the inbox
+### Show the orchestrator running
 
 **[Switch to terminal]**
 
@@ -147,127 +208,126 @@ uv run python main.py --dry-run
 ```
 
 > Say:
-> "Now I'm starting the orchestrator in dry-run mode. It scans the
-> vault every 15 seconds and dispatches Claude Code skills to process
-> new items."
+> "The orchestrator is the brain — it scans every 15 seconds,
+> detects new items, and dispatches Claude Code skills."
 
-**Wait for initial output**:
+**Wait for output**:
 ```
 Orchestrator started (vault=..., dry_run=True, scan_interval=15s)
-Initial snapshot — Needs_Action: X, Approved: 0
+Initial snapshot — Needs_Action: 3, Approved: 0
 DRY RUN — would run skill: update_dashboard
 ```
 
 > Say:
-> "In dry-run mode, it logs what it *would* do without actually
-> calling Claude. In production, Claude reads the skill instructions
-> and executes each step autonomously."
-
-**[Ctrl+C to stop the orchestrator]**
-
-### Show an existing plan
-
-**[Switch to Obsidian]**
-
-Open `Plans/PLAN_email_urgent_invoice_request_20260214.md`
-
-> Say:
-> "Here's a plan Claude created when an urgent invoice email arrived.
-> It identified the action type, listed the steps needed, and flagged
-> that payment approval is required."
-
-**Scroll to show**:
-- The action steps
-- The `**[APPROVAL NEEDED]**` markers
-
-### Show the audit log
-
-**[Open Logs/audit/ in file explorer or terminal]**
-
-```bash
-cat Logs/audit/audit_2026-02-15.jsonl
-```
-
-> Say:
-> "Every single action gets logged in JSON format — timestamp, who
-> did it, what they did, and whether it was a dry run. This is the
-> full audit trail."
-
----
-
-## 5. Approval Workflow (2 minutes)
-
-### Show a pending approval
-
-**[In Obsidian, open Pending_Approval/]**
-
-Open `APPROVAL_email_new_contact_invoice_20260214.md`
-
-> Say:
-> "This is a real approval request. Sarah Martinez sent an urgent
-> invoice for $5,000. Claude classified it, flagged it as high
-> priority, and created this approval file. It's waiting for me."
-
-**Highlight these sections**:
-- `requires_approval: true`
-- `priority: high`
-- The "Recommended Action" section
-- The "Handbook Reference" section (shows *why* approval is needed)
-
-### Approve it (move the file)
-
-> Say:
-> "To approve, I simply drag this file from Pending_Approval to
-> Approved. That's it — no buttons, no UI. Just move the file."
-
-**[In Obsidian, drag the file from `Pending_Approval/` to `Approved/`]**
-
-*(Alternative: use terminal)*
-```bash
-mv Pending_Approval/APPROVAL_email_new_contact_invoice_20260214.md Approved/
-```
-
-### Show dry-run execution
-
-**[Switch to terminal]**
-
-```bash
-uv run python main.py --dry-run
-```
-
-Wait for output showing it detected the approved item:
-```
-Detected 1 approved item(s)
-DRY RUN — would run skill: execute_approved
-```
-
-> Say:
-> "The orchestrator detected the approved file and would execute it.
-> In dry-run mode it just logs. In production, it would send the
-> email, log the transaction in Accounting, and move the file to Done."
+> "In dry-run mode it logs what it would do. In production, Claude
+> reads the skill file and executes every step autonomously —
+> reading the message, checking the handbook, drafting a reply,
+> and creating an approval file."
 
 **[Ctrl+C to stop]**
 
-### Show the LinkedIn post approval
+### Show an existing plan
 
-**[In Obsidian, open Pending_Approval/LINKEDIN_2026-02-15.md]**
+**[In Obsidian, open Plans/PLAN_whatsapp_urgent_test_user_20260226.md]**
 
 > Say:
-> "Here's another example — a LinkedIn post Claude drafted. It read
-> my business goals, saw that I completed a logo design project, and
-> wrote this post. It won't publish until I approve it."
-
-**Scroll to the post content** — read a line or two aloud.
+> "Here's a real plan Claude created for a WhatsApp message.
+> It identified that the sender is a new contact, spotted the
+> invoice keyword, created two actions — a reply draft and an
+> invoice review task — and routed both to the approval queue."
 
 ---
 
-## 6. CEO Briefing (1 minute)
+## 6. Approval Workflow (2 minutes)
+
+### Show a WhatsApp reply approval
+
+**[In Obsidian, open Pending_Approval/WHATSAPP_REPLY_Test_User_20260226.md]**
+
+> Say:
+> "This is a WhatsApp reply waiting for my approval. Claude
+> drafted the reply, set priority to high because it's a new
+> contact, and explained exactly why approval is needed —
+> referencing the Company Handbook."
+
+**Highlight**:
+- `action: whatsapp_reply`
+- `priority: high`
+- The proposed reply text
+- "New contact — requires approval" note
+
+### Approve it
+
+> Say:
+> "To approve, I drag this file to the Approved folder.
+> That's the entire UI — just move a markdown file."
+
+**[Drag from Pending_Approval/ to Approved/ in Obsidian sidebar]**
+
+> Say:
+> "The orchestrator detects this in the next scan and runs
+> the whatsapp_reply skill — which sends the message, writes
+> an audit log, and moves the file to Done."
+
+### Show the email approval too
+
+**[Open Approved/APPROVAL_email_new_contact_invoice_20260214.md]**
+
+> Say:
+> "Same pattern for emails. Sarah Martinez sent a $5,000
+> invoice request — Claude flagged it, created this approval,
+> and it's been waiting for me. One drag to execute."
+
+### Show the audit log
+
+**[Terminal]**:
+
+```bash
+cat Logs/audit/audit_2026-02-26.jsonl
+```
+
+> Say:
+> "Every approval, every execution, every dry-run — all logged
+> in JSON format with timestamp, actor, target, and result.
+> Full audit trail."
+
+---
+
+## 7. WhatsApp MCP Tools (1 minute)
+
+**[Switch to terminal — explain what MCP is]**
+
+> Say:
+> "I also built a WhatsApp MCP server — this gives Claude Code
+> direct access to WhatsApp through 8 tools registered in the
+> Claude config."
+
+**[Show .claude/mcp.json]**
+
+> Say:
+> "Claude can now call `whatsapp_get_chats` to see my inbox,
+> `whatsapp_search_messages` to find specific conversations,
+> or `whatsapp_get_chat_summary` to get an AI-ready summary
+> of any conversation. All read-only tools are auto-approved.
+> Send and delete always create an approval file first —
+> the AI cannot act unilaterally."
+
+**[Show Briefings/WhatsApp_Summary_2026-02-26.md]**
+
+> Say:
+> "Every evening at 9 PM, a WhatsApp daily summary is generated
+> automatically — total messages, key topics, pending replies,
+> and flagged urgent conversations."
+
+---
+
+## 8. CEO Briefing (1 minute)
 
 **[In Obsidian, open Briefings/2026-02-16_Monday_Briefing_v2.md]**
 
 > Say:
-> "Every Sunday night, the AI generates a CEO briefing for Monday
-> morning. This is a real one."
+> "Every Sunday night, the AI generates a CEO briefing for
+> Monday morning. This is a real one."
 
 **Scroll through and highlight**:
 
@@ -275,58 +335,53 @@ DRY RUN — would run skill: execute_approved
 2. **Revenue table** — "$2,300 of $5,000 — 46%, invoice payment rate 100%."
 3. **Completed This Week** — "Three tasks completed with timestamps."
 4. **Bottlenecks** — "Shows items stuck in approval too long."
-5. **Proactive Suggestions** — "The AI recommends actions — like exiting dry-run mode."
+5. **Proactive Suggestions** — "The AI recommends next actions."
 
 > Say:
-> "This isn't a template — Claude analyzed the vault, read the logs,
-> checked financials, and wrote this. Every number comes from real
-> data in the vault."
+> "This isn't a template — Claude analyzed the vault, read the
+> logs, checked financials, and wrote this. Every number is
+> real data from the vault."
 
 ---
 
-## 7. Security Demo (30 seconds)
+## 9. Security Demo (30 seconds)
 
-**[Open security_checklist.md in Obsidian]**
-
-> Say:
-> "Security is built in from the start."
-
-Quickly point to:
-- "DRY_RUN is on by default"
-- "Rate limiting table — 10 emails per hour, 3 payments per day"
-- "All credentials from environment variables, never in the vault"
-- "JSON audit logs for every action"
-
-**[Quick flash of terminal]**:
+**[Terminal]**:
 
 ```bash
 uv run python -c "from security_config import security; print(security.all_rate_limits())"
 ```
 
 > Say:
-> "Rate limits are enforced in code. The AI literally cannot send
-> more than 10 emails per hour, even if it wanted to."
+> "Security is built in from day one. Rate limits are enforced
+> in code — 10 emails per hour, 20 WhatsApp messages per hour,
+> 3 payments per day. The AI literally cannot exceed these,
+> even if it wanted to.
+>
+> DRY_RUN is on by default. All credentials come from environment
+> variables — nothing hardcoded. WhatsApp session data and OAuth
+> tokens are gitignored. Every action has a JSON audit trail."
 
 ---
 
-## 8. Closing (30 seconds)
+## 10. Closing (30 seconds)
 
 > Say:
 > "To recap — this is a fully autonomous AI employee that:
 >
-> - Monitors my email and file drops 24/7
+> - Monitors my email and WhatsApp 24/7
+> - Watches my desktop for dropped files
 > - Creates action plans and drafts responses
-> - Requires my approval for anything sensitive
-> - Generates weekly briefings with financial analysis
+> - Requires my approval for every sensitive action
+> - Generates weekly CEO briefings with financial analysis
 > - Posts to LinkedIn on my behalf
+> - Summarizes my WhatsApp daily at 9 PM
 > - Logs every single action for auditability
 >
-> Everything runs inside an Obsidian vault with Claude Code.
-> It's my Gold tier submission for Hackathon 0.
+> It runs on 11 Claude Code skills, 2 MCP servers — LinkedIn
+> and WhatsApp — and the entire UI is just an Obsidian vault.
 >
-> For next steps, I want to add WhatsApp integration, a Stripe
-> payment watcher, and move from dry-run to live mode.
->
+> This is my Gold tier submission for Hackathon 0.
 > Thanks for watching!"
 
 **[End recording]**
@@ -337,16 +392,32 @@ uv run python -c "from security_config import security; print(security.all_rate_
 
 Before hitting record, make sure:
 
+**System**
 - [ ] Obsidian is open with the vault loaded
 - [ ] Terminal is open in the vault directory
-- [ ] `.env` has `DRY_RUN=true`
-- [ ] `AI_Drop` folder exists on desktop and is empty
-- [ ] `Needs_Action/` has some items to show
-- [ ] `Pending_Approval/` has approval files to demo
-- [ ] `Briefings/` has at least one briefing
-- [ ] `uv sync` has been run (dependencies installed)
-- [ ] Screen resolution is readable for recording (1080p+, large font)
+- [ ] Screen resolution 1080p+, font size increased for visibility
 - [ ] Close any windows with personal info / credentials
+- [ ] `.env` has `DRY_RUN=false` for live WhatsApp demo (or true for safety)
+
+**WhatsApp**
+- [ ] `node whatsapp_watcher.js` has been run once — session is connected
+- [ ] `Needs_Action/messages/` has at least one processed message to show
+- [ ] `Pending_Approval/` has a `WHATSAPP_REPLY_*.md` file ready to approve
+- [ ] A second phone or contact is ready to send a live test message
+- [ ] `Briefings/WhatsApp_Summary_*.md` exists to show
+
+**Email / Files**
+- [ ] `AI_Drop` folder exists on desktop and is empty
+- [ ] `Needs_Action/` has items to show
+- [ ] `Plans/` has at least one plan to open
+- [ ] `Briefings/` has the Monday briefing ready
+
+**Code**
+- [ ] `uv sync` has been run (Python dependencies installed)
+- [ ] `npm install` has been run in `whatsapp/` folder
+- [ ] Orchestrator imports cleanly: `uv run python -c "from orchestrator import Orchestrator; print('OK')"`
+
+---
 
 ## Timing Guide
 
@@ -354,19 +425,25 @@ Before hitting record, make sure:
 |---------|----------|------------|
 | Intro | 0:30 | 0:30 |
 | Vault Tour | 1:00 | 1:30 |
-| File Watcher | 2:00 | 3:30 |
-| Claude Processing | 2:00 | 5:30 |
-| Approval Workflow | 2:00 | 7:30 |
-| CEO Briefing | 1:00 | 8:30 |
-| Security | 0:30 | 9:00 |
-| Closing | 0:30 | 9:30 |
+| WhatsApp Watcher Demo | 2:30 | 4:00 |
+| File Watcher Demo | 1:30 | 5:30 |
+| Claude Processing | 1:30 | 7:00 |
+| Approval Workflow | 2:00 | 9:00 |
+| WhatsApp MCP Tools | 1:00 | 10:00 |
+| CEO Briefing | 1:00 | 11:00 |
+| Security | 0:30 | 11:30 |
+| Closing | 0:30 | 12:00 |
 
-**Total: ~9.5 minutes** (within 5-10 minute target)
+**Total: ~12 minutes**
 
-## Tips
+---
 
-- Speak slowly and clearly — you can always speed up the video in editing
-- Pause for 2-3 seconds on important screens so viewers can read
+## Recording Tips
+
+- Speak slowly and clearly — speed up in editing if needed
+- Pause 2-3 seconds on important screens so viewers can read
 - If a command takes time, narrate what's happening while you wait
+- Keep `.env` off-screen at all times (paths and credentials)
+- If WhatsApp takes a few seconds to connect — narrate it: "The session loads from cache, no QR needed"
 - If something goes wrong, keep recording — troubleshooting live shows authenticity
-- Keep the `.env` file off-screen to avoid leaking paths or credentials
+- The WhatsApp watcher terminal and Obsidian look great side-by-side for the message demo
