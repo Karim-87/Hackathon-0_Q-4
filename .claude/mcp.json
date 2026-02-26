@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "whatsapp": {
+      "command": "node",
+      "args": ["D:/Hackathon-0 Q4/ai-employee-project/whatsapp_mcp.js"],
+      "env": {
+        "VAULT_PATH": "D:/Hackathon-0 Q4/AI_Employee_Vault",
+        "DRY_RUN": "true",
+        "MAX_MESSAGES_PER_HOUR": "20"
+      }
+    }
+  }
+}

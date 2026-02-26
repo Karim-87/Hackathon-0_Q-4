@@ -75,6 +75,7 @@ class Orchestrator:
     DASHBOARD_INTERVAL = 1800   # 30 minutes
     BRIEFING_DAY = 6            # Sunday (0=Monday in weekday())
     BRIEFING_HOUR = 23          # 11 PM
+    WHATSAPP_SUMMARY_HOUR = 21  # 9 PM daily
 
     MAX_RETRIES = 1             # retry once on failure, then alert
     CLAUDE_TIMEOUT = 120        # seconds to wait for Claude Code
@@ -103,6 +104,7 @@ class Orchestrator:
         # Scheduling
         self._last_dashboard_update = 0.0
         self._last_briefing_check = ""
+        self._last_whatsapp_summary_check = ""
 
         # Health metrics
         self._start_time = None
@@ -347,6 +349,17 @@ class Orchestrator:
             return True
         return False
 
+    def _should_run_whatsapp_summary(self):
+        """Return True if it's 9PM and WhatsApp summary hasn't run today."""
+        now = datetime.now(timezone.utc)
+        today_str = now.strftime("%Y-%m-%d")
+
+        if (now.hour == self.WHATSAPP_SUMMARY_HOUR
+                and self._last_whatsapp_summary_check != today_str):
+            self._last_whatsapp_summary_check = today_str
+            return True
+        return False
+
     # ── Health Check ────────────────────────────────────────────────
 
     def health_status(self):
@@ -475,6 +488,11 @@ class Orchestrator:
         if self._should_run_briefing():
             self.logger.info("Scheduled CEO briefing generation")
             self._run_skill_with_retry("ceo_briefing")
+
+        # 5. Scheduled: WhatsApp daily summary at 9 PM
+        if self._should_run_whatsapp_summary():
+            self.logger.info("Scheduled WhatsApp daily summary")
+            self._run_skill_with_retry("whatsapp_summary")
 
     # ── Event Handlers ──────────────────────────────────────────────
 

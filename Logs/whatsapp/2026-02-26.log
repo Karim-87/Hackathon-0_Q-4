@@ -1,0 +1,290 @@
+2026-02-26 05:06:27 | WhatsAppWatcher | INFO | WhatsApp Watcher starting... (DRY_RUN=true)
+2026-02-26 05:06:27 | WhatsAppWatcher | INFO | Session: D:\Hackathon-0 Q4\ai-employee-project\.wwebjs_auth
+2026-02-26 05:06:27 | WhatsAppWatcher | INFO | Vault  : D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 05:13:25 | WhatsAppWatcher | INFO | WhatsApp Watcher starting... (DRY_RUN=true)
+2026-02-26 05:13:25 | WhatsAppWatcher | INFO | Session: D:\Hackathon-0 Q4\ai-employee-project\.wwebjs_auth
+2026-02-26 05:13:25 | WhatsAppWatcher | INFO | Vault  : D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 05:21:57 | WhatsAppWatcher | INFO | WhatsApp Watcher starting... (DRY_RUN=true)
+2026-02-26 05:21:57 | WhatsAppWatcher | INFO | Session: D:\Hackathon-0 Q4\ai-employee-project\.wwebjs_auth
+2026-02-26 05:21:57 | WhatsAppWatcher | INFO | Vault  : D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 05:23:46 | WhatsAppWatcher | INFO | WhatsApp Watcher starting... (DRY_RUN=true)
+2026-02-26 05:23:46 | WhatsAppWatcher | INFO | Session: D:\Hackathon-0 Q4\ai-employee-project\.wwebjs_auth
+2026-02-26 05:23:46 | WhatsAppWatcher | INFO | Vault  : D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 17:24:50 | WhatsAppWatcher | INFO | WhatsApp Watcher starting... (DRY_RUN=true)
+2026-02-26 17:24:50 | WhatsAppWatcher | INFO | Session: D:\Hackathon-0 Q4\ai-employee-project\.wwebjs_auth
+2026-02-26 17:24:50 | WhatsAppWatcher | INFO | Vault  : D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 17:30:49 | WhatsAppWatcher | INFO | WhatsApp Watcher starting... (DRY_RUN=true)
+2026-02-26 17:30:49 | WhatsAppWatcher | INFO | Session: D:\Hackathon-0 Q4\ai-employee-project\.wwebjs_auth
+2026-02-26 17:30:49 | WhatsAppWatcher | INFO | Vault  : D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 17:31:06 | WhatsAppWatcher | WARN | Disconnected: LOGOUT
+2026-02-26 17:31:06 | WhatsAppWatcher | ERROR | Session expired — alert created in Needs_Action/
+2026-02-26 17:34:27 | WhatsAppWatcher | INFO | WhatsApp Watcher starting... (DRY_RUN=true)
+2026-02-26 17:34:27 | WhatsAppWatcher | INFO | Session: D:\Hackathon-0 Q4\ai-employee-project\.wwebjs_auth
+2026-02-26 17:34:27 | WhatsAppWatcher | INFO | Vault  : D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 17:35:21 | WhatsAppWatcher | INFO | QR code ready — scan with WhatsApp on your phone
+2026-02-26 17:36:21 | WhatsAppWatcher | INFO | QR code ready — scan with WhatsApp on your phone
+2026-02-26 17:37:07 | WhatsAppWatcher | INFO | Authenticated. Session saved.
+2026-02-26 17:37:07 | WhatsAppWatcher | INFO | Authenticated. Session saved.
+2026-02-26 17:37:07 | WhatsAppWatcher | INFO | Authenticated. Session saved.
+2026-02-26 17:37:09 | WhatsAppWatcher | INFO | Connected: Karim Buksh (923042050840) on smba
+2026-02-26 17:37:09 | WhatsAppWatcher | INFO | DRY_RUN=true | VAULT=D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 17:37:09 | WhatsAppWatcher | INFO | Checking unread messages from last 24 hours...
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173729._Miss_Najumu_Sahar.md
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | Processed message from Miss Najumu Sahar | priority=low | group=false
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173729._Qurrat_UL_Ain_Hussain.md
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | Processed message from Qurrat UL Ain Hussain | priority=low | group=false
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173729._Zahoor_Jim.md
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | Processed message from Zahoor Jim | priority=low | group=false
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173729._Fazal_Wahab_ISA.md
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173729._Fazal_Wahab_ISA.md
+2026-02-26 17:37:29 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:37:35 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173735._Waqas_Ahmed_JST.md
+2026-02-26 17:37:35 | WhatsAppWatcher | INFO | Processed message from Waqas Ahmed JST | priority=low | group=false
+2026-02-26 17:37:49 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173749._RAZA_BALOCH_RSU.jpeg
+2026-02-26 17:37:49 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173749._RAZA_BALOCH_RSU.md
+2026-02-26 17:37:49 | WhatsAppWatcher | INFO | Processed message from RAZA BALOCH RSU | priority=low | group=false
+2026-02-26 17:37:52 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173752._RAZA_BALOCH_RSU.jpeg
+2026-02-26 17:37:52 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173752._RAZA_BALOCH_RSU.md
+2026-02-26 17:37:52 | WhatsAppWatcher | INFO | Processed message from RAZA BALOCH RSU | priority=low | group=false
+2026-02-26 17:37:52 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173752._RAZA_BALOCH_RSU.jpeg
+2026-02-26 17:37:52 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173752._RAZA_BALOCH_RSU.md
+2026-02-26 17:37:52 | WhatsAppWatcher | INFO | Processed message from RAZA BALOCH RSU | priority=low | group=false
+2026-02-26 17:37:53 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173753._RAZA_BALOCH_RSU.jpeg
+2026-02-26 17:37:53 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173753._RAZA_BALOCH_RSU.md
+2026-02-26 17:37:53 | WhatsAppWatcher | INFO | Processed message from RAZA BALOCH RSU | priority=low | group=false
+2026-02-26 17:37:53 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173753._Abdul_Karim_J_DEO_Clrk.jpeg
+2026-02-26 17:37:53 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173753._Abdul_Karim_J_DEO_Clrk.md
+2026-02-26 17:37:53 | WhatsAppWatcher | INFO | Processed message from Abdul Karim J DEO Clrk | priority=low | group=false
+2026-02-26 17:38:08 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173808._Toseef_Gabol.jpeg
+2026-02-26 17:38:08 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173808._Toseef_Gabol.md
+2026-02-26 17:38:08 | WhatsAppWatcher | INFO | Processed message from Toseef Gabol | priority=low | group=false
+2026-02-26 17:38:08 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173808._Toseef_Gabol.jpeg
+2026-02-26 17:38:08 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173808._Toseef_Gabol.md
+2026-02-26 17:38:08 | WhatsAppWatcher | INFO | Processed message from Toseef Gabol | priority=low | group=false
+2026-02-26 17:38:09 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173809._Toseef_Gabol.jpeg
+2026-02-26 17:38:09 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173809._Toseef_Gabol.md
+2026-02-26 17:38:09 | WhatsAppWatcher | INFO | Processed message from Toseef Gabol | priority=low | group=false
+2026-02-26 17:38:09 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173809._Toseef_Gabol.jpeg
+2026-02-26 17:38:09 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226173809._Toseef_Gabol.md
+2026-02-26 17:38:09 | WhatsAppWatcher | INFO | Processed message from Toseef Gabol | priority=low | group=false
+2026-02-26 17:38:19 | WhatsAppWatcher | INFO | [DRY-RUN] Would save media: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\media\20260226173819._Fazal_Wahab_ISA.jpeg
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Fazal_Wahab_ISA.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Startup unread scan failed: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923032599688: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._امام_دین.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from امام دین | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923032599688: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._امام_دین.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from امام دین | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923122487545: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Shabir_Hassan_Meo.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Shabir Hassan Meo | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923060215801: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Jalal_Gabol.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Jalal Gabol | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923060215801: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Jalal_Gabol.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Jalal Gabol | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923060215801: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Jalal_Gabol.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Jalal Gabol | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923009235491: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._M_Ejaz_Chhoro_JIM.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from M Ejaz Chhoro JIM | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923009235491: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._M_Ejaz_Chhoro_JIM.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from M Ejaz Chhoro JIM | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923248345121: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Slaudin_Saleem_Mula.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Slaudin Saleem Mula | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923337822046: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Miss_Najumu_Sahar.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Miss Najumu Sahar | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923337822046: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Miss_Najumu_Sahar.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Miss Najumu Sahar | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923337822046: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Miss_Najumu_Sahar.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Miss Najumu Sahar | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923337822046: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Miss_Najumu_Sahar.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Miss Najumu Sahar | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923062678079: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._A_Rauf_Rind.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from A Rauf Rind | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923062678079: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._A_Rauf_Rind.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from A Rauf Rind | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923452120782: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._S.Sobho_TEO.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from S.Sobho TEO | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923191970880: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Miss_Shabana_Ibrahim.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Miss Shabana Ibrahim | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923212810918: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Liaquat_H_Jokhio_PST.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Liaquat H Jokhio PST | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923256637737: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Toseef_Gabol.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Toseef Gabol | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923208209469: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Nasir_Akbar.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Nasir Akbar | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923052136573: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Zahoor_Jim.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Zahoor Jim | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923052136573: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Zahoor_Jim.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Zahoor Jim | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923032747822: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Tokeer_Mama.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Tokeer Mama | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923032747822: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Tokeer_Mama.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Tokeer Mama | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923048789591: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Ghulam_Fareed_Sachal_Police.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Ghulam Fareed Sachal Police | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923333517188: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Zahid_ku.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Zahid ku | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923226391396: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Anis_AJ.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Anis AJ | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923226391396: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Anis_AJ.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Anis AJ | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923422667599: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Fazal_Wahab_ISA.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923422667599: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Fazal_Wahab_ISA.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923422667599: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Fazal_Wahab_ISA.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923422667599: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Fazal_Wahab_ISA.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923422667599: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Fazal_Wahab_ISA.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923422667599: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Fazal_Wahab_ISA.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Fazal Wahab ISA | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923453201067: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Waqas_Ahmed_JST.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Waqas Ahmed JST | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923333343848: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Fida_Hussain_Jokhio.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Fida Hussain Jokhio | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923055284894: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Haq_Nawaz_Gabol_Malwani.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Haq Nawaz Gabol Malwani | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923055284894: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Haq_Nawaz_Gabol_Malwani.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Haq Nawaz Gabol Malwani | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923092737526: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Nazeer_D.K_Gabol.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Nazeer D.K Gabol | priority=low | group=false
+2026-02-26 17:41:34 | WhatsAppWatcher | WARN | Failed to download media from 923212958426: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | [DRY-RUN] Would write: D:\Hackathon-0 Q4\AI_Employee_Vault\Needs_Action\messages\20260226174134._Hammad_Hussain_Muzafar.md
+2026-02-26 17:41:34 | WhatsAppWatcher | INFO | Processed message from Hammad Hussain Muzafar | priority=low | group=false
+2026-02-26 17:42:17 | WhatsAppWatcher | INFO | WhatsApp Watcher starting... (DRY_RUN=false)
+2026-02-26 17:42:17 | WhatsAppWatcher | INFO | Session: D:\Hackathon-0 Q4\ai-employee-project\.wwebjs_auth
+2026-02-26 17:42:17 | WhatsAppWatcher | INFO | Vault  : D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 17:42:54 | WhatsAppWatcher | INFO | Authenticated. Session saved.
+2026-02-26 17:42:58 | WhatsAppWatcher | INFO | Connected: Karim Buksh (923042050840) on smba
+2026-02-26 17:42:58 | WhatsAppWatcher | INFO | DRY_RUN=false | VAULT=D:\Hackathon-0 Q4\AI_Employee_Vault
+2026-02-26 17:42:58 | WhatsAppWatcher | INFO | Checking unread messages from last 24 hours...
+2026-02-26 17:43:04 | WhatsAppWatcher | INFO | Action file created: Needs_Action/messages/20260226174304._F.md
+2026-02-26 17:43:04 | WhatsAppWatcher | INFO | Processed message from F | priority=low | group=false
+2026-02-26 17:43:32 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:33 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:33 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:34 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:35 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:36 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:36 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:37 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:38 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:39 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:39 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:40 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:40 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:41 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:42 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:42 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)
+2026-02-26 17:43:43 | WhatsAppWatcher | DEBUG | Group message from Munna Mobile Mart skipped (no mention/keyword)
+2026-02-26 17:43:44 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:44 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:44 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:45 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:45 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:46 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:46 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:46 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:47 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:47 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:48 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:48 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:49 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:49 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:50 | WhatsAppWatcher | DEBUG | Group message from TEO(ESHS)/M/GADAP skipped (no mention/keyword)
+2026-02-26 17:43:50 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:50 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:51 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:52 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:52 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:53 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:53 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:54 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:54 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:55 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:56 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:56 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:57 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:57 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:43:58 | WhatsAppWatcher | DEBUG | Group message from مالواٹی سنگت❤️ skipped (no mention/keyword)
+2026-02-26 17:43:58 | WhatsAppWatcher | DEBUG | Group message from مالواٹی سنگت❤️ skipped (no mention/keyword)
+2026-02-26 17:43:59 | WhatsAppWatcher | DEBUG | Group message from مالواٹی سنگت❤️ skipped (no mention/keyword)
+2026-02-26 17:43:59 | WhatsAppWatcher | DEBUG | Group message from مالواٹی سنگت❤️ skipped (no mention/keyword)
+2026-02-26 17:43:59 | WhatsAppWatcher | DEBUG | Group message from مالواٹی سنگت❤️ skipped (no mention/keyword)
+2026-02-26 17:44:00 | WhatsAppWatcher | DEBUG | Group message from مالواٹی سنگت❤️ skipped (no mention/keyword)
+2026-02-26 17:44:00 | WhatsAppWatcher | DEBUG | Group message from مالواٹی سنگت❤️ skipped (no mention/keyword)
+2026-02-26 17:44:01 | WhatsAppWatcher | DEBUG | Group message from ج ا م ضلع ملیر 2 گڈاپ skipped (no mention/keyword)
+2026-02-26 17:44:01 | WhatsAppWatcher | DEBUG | Group message from ج ا م ضلع ملیر 2 گڈاپ skipped (no mention/keyword)
+2026-02-26 17:44:02 | WhatsAppWatcher | DEBUG | Group message from ج ا م ضلع ملیر 2 گڈاپ skipped (no mention/keyword)
+2026-02-26 17:44:02 | WhatsAppWatcher | DEBUG | Group message from ج ا م ضلع ملیر 2 گڈاپ skipped (no mention/keyword)
+2026-02-26 17:44:03 | WhatsAppWatcher | DEBUG | Group message from ج ا م ضلع ملیر 2 گڈاپ skipped (no mention/keyword)
+2026-02-26 17:44:03 | WhatsAppWatcher | DEBUG | Group message from ج ا م ضلع ملیر 2 گڈاپ skipped (no mention/keyword)
+2026-02-26 17:44:04 | WhatsAppWatcher | DEBUG | Group message from ج ا م ضلع ملیر 2 گڈاپ skipped (no mention/keyword)
+2026-02-26 17:44:04 | WhatsAppWatcher | DEBUG | Group message from ج ا م ضلع ملیر 2 گڈاپ skipped (no mention/keyword)
+2026-02-26 17:44:04 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:05 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:05 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:06 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:06 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:06 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:07 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:07 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:08 | WhatsAppWatcher | DEBUG | Group message from طاہری گروپ skipped (no mention/keyword)
+2026-02-26 17:44:09 | WhatsAppWatcher | DEBUG | Group message from تنظيم ڳوٺ نظر محمد گبول skipped (no mention/keyword)
+2026-02-26 17:44:10 | WhatsAppWatcher | DEBUG | Group message from تنظيم ڳوٺ نظر محمد گبول skipped (no mention/keyword)
+2026-02-26 17:44:10 | WhatsAppWatcher | DEBUG | Group message from تنظيم ڳوٺ نظر محمد گبول skipped (no mention/keyword)
+2026-02-26 17:44:11 | WhatsAppWatcher | DEBUG | Group message from تنظيم ڳوٺ نظر محمد گبول skipped (no mention/keyword)
+2026-02-26 17:44:11 | WhatsAppWatcher | DEBUG | Group message from تنظيم ڳوٺ نظر محمد گبول skipped (no mention/keyword)
+2026-02-26 17:44:12 | WhatsAppWatcher | DEBUG | Group message from تنظيم ڳوٺ نظر محمد گبول skipped (no mention/keyword)
+2026-02-26 17:44:12 | WhatsAppWatcher | DEBUG | Group message from تنظيم ڳوٺ نظر محمد گبول skipped (no mention/keyword)
+2026-02-26 17:44:12 | WhatsAppWatcher | DEBUG | Group message from تنظيم ڳوٺ نظر محمد گبول skipped (no mention/keyword)
+2026-02-26 17:44:12 | WhatsAppWatcher | DEBUG | Group message from GIAIC Q4 | Sun 2 to 5 skipped (no mention/keyword)
+2026-02-26 17:44:13 | WhatsAppWatcher | DEBUG | Group message from G2 Lesson Plans skipped (no mention/keyword)
+2026-02-26 17:44:13 | WhatsAppWatcher | DEBUG | Group message from شعور و آگہی ( 1 ) skipped (no mention/keyword)
+2026-02-26 17:44:13 | WhatsAppWatcher | DEBUG | Group message from B.ed 1.5 fellows skipped (no mention/keyword)
+2026-02-26 17:44:13 | WhatsAppWatcher | DEBUG | Group message from Untie the knots skipped (no mention/keyword)
+2026-02-26 17:44:13 | WhatsAppWatcher | DEBUG | Group message from On-line EARNINGS with PRINCE 💚🌹 skipped (no mention/keyword)
+2026-02-26 17:44:13 | WhatsAppWatcher | INFO | Startup unread scan complete: 84 message(s) processed
+2026-02-26 17:49:08 | WhatsAppWatcher | DEBUG | Group message from Sunday Afternoon AI/Spec-Driven Online Hackathon skipped (no mention/keyword)
+2026-02-26 17:51:07 | WhatsAppWatcher | DEBUG | Group message from District Education Office ES HS Malir skipped (no mention/keyword)

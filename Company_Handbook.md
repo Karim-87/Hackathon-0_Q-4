@@ -36,6 +36,31 @@ last_reviewed: 2026-01-01
 | File operations (create/read) | ✅ Yes |
 | File delete | 🔴 Always approval |
 
+## WhatsApp Rules
+- Reply only to messages containing keywords: urgent, invoice, payment, help, asap, pricing, deadline, emergency, critical
+- Always be polite; match sender's language and tone
+- Never send messages to new/unknown numbers without approval
+- Group messages: only respond when directly mentioned OR keyword matched
+- Media files: save to `/Needs_Action/media/`, reference path in action file
+- Rate limit: max 20 outgoing messages per hour
+- Delete messages: always require approval
+- Never share sensitive info (bank details, passwords, API keys) via WhatsApp
+- Business hours: auto-draft reply, send only after approval
+- After-hours urgent messages: create high-priority alert in `/Needs_Action/`
+
+## WhatsApp Autonomy Levels
+| Action | Auto-Approve? |
+|--------|--------------|
+| Read messages | Yes |
+| Get chat list / contacts | Yes |
+| Search messages | Yes |
+| Mark chat as read | Yes |
+| Draft reply to known contact | Yes (draft only) |
+| Send message to known contact | Approval needed |
+| Send message to new/unknown number | Always approval |
+| Delete any message | Always approval |
+| Download media | Yes (save to /Needs_Action/media/) |
+
 ## Working Hours
 - Active monitoring: 24/7
 - Briefing generation: Every Monday 8:00 AM

@@ -33,3 +33,11 @@ Logs/audit/
 
 # Node
 node_modules/
+
+# WhatsApp session data — NEVER commit (contains auth tokens)
+.wwebjs_auth/
+.wwebjs_cache/
+whatsapp_media/
+
+# WhatsApp media downloads
+Needs_Action/media/

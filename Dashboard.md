@@ -92,6 +92,13 @@ _No tasks in progress_
 - **FileSystemWatcher.log** — Last active: 2026-02-13 07:25:35
   - Detected 1 file drop (`test_invoice.txt`)
 
+## 📱 WhatsApp Status
+- **Connection**: 🟢 Connected (Karim Buksh — 923042050840)
+- **Unread Chats**: 0
+- **Pending Replies**: 0
+- **Messages Today**: Sent 1 / Received 85
+- **Last Summary**: [[WhatsApp_Summary_2026-02-26]]
+
 ## ⚠️ Alerts
 - **High-priority approval pending**: $5,000 invoice request from Sarah Martinez — expires 2026-02-15 12:05
 - **Revenue pace**: $2,300 of $5,000 (46%) with 13 days remaining — needs $2,700 more to hit target
